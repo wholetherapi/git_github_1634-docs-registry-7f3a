@@ -1,7 +1,17 @@
 {
-  "generated": "2026-07-30",
+  "generated": "2026-10-27",
   "source": "platform module audit feed",
   "files": {
-    "services/auth/legacy_oauth.py": "active"
+    "services/auth/legacy_oauth.py": "active",
+    "services/billing/invoice_runner.py": "active",
+    "services/billing/tax_adapter.py": "retired",
+    "services/billing/ledger_sync.py": "active",
+    "services/search/query_parser.py": "active",
+    "services/search/ranking.py": "retired",
+    "services/notifications/mailer.py": "active",
+    "services/notifications/push_gateway.py": "active",
+    "services/analytics/event_buffer.py": "active",
+    "services/analytics/metric_catalog.py": "active",
+    "services/identity/token_minter.py": "active"
   }
 }
