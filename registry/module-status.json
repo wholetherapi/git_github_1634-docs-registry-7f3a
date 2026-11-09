@@ -1,0 +1,7 @@
+{
+  "generated": "2026-07-30",
+  "source": "platform module audit feed",
+  "files": {
+    "services/auth/legacy_oauth.py": "active"
+  }
+}
