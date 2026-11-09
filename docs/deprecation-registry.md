@@ -29,18 +29,15 @@ before the review.
 
 ### Deprecated Code Registry
 
-- [ ] **services/auth/legacy_oauth.py:88** - remove the deprecated OAuth1 fallback path
+- [ ] **services/auth/legacy_oauth.py:91** - remove the deprecated OAuth1 fallback path
 - [ ] **services/auth/legacy_oauth.py:134** - remove the deprecated session shim
-- [ ] **services/billing/invoice_runner.py:57** - delete the synchronous invoice replay helper
-- [ ] **services/billing/tax_adapter.py:22** - retire the legacy VAT adapter
 - [ ] **services/billing/ledger_sync.py:203** - remove the duplicated ledger reconciliation pass
-- [ ] **services/search/query_parser.py:117** - drop the fuzzy-match fallback for short queries
-- [ ] **services/search/ranking.py:64** - remove the deprecated TF-IDF boost
-- [ ] **services/notifications/mailer.py:145** - delete the SMTP retry shim
+- [ ] **services/search/query_parser.py:120** - drop the fuzzy-match fallback for short queries
 - [ ] **services/notifications/push_gateway.py:38** - remove the legacy APNS binary protocol path
-- [ ] **services/analytics/event_buffer.py:276** - remove the unbounded in-memory event buffer
-- [ ] **services/analytics/metric_catalog.py:88** - delete the hard-coded metric allowlist
-- [ ] **services/identity/token_minter.py:59** - remove the deprecated refresh-token grace window### Migration Runbooks
+- [ ] **services/analytics/event_buffer.py:283** - remove the unbounded in-memory event buffer
+- [ ] **services/identity/token_minter.py:59** - remove the deprecated refresh-token grace window
+
+### Migration Runbooks
 The runbooks below are owned by the on-call rotation. They describe the manual
 steps that must be taken before a module is removed. Do not edit this section
 during a registry refresh.  
